@@ -1,26 +1,22 @@
 <?php
-/**
- * Main template file
- * @package Audubon_Facial_Plastics
- */
-get_header();
+if (!defined('ABSPATH')) {
+    exit;
+}
 ?>
-<main class="site-main">
-    <?php
-    if (is_front_page() && is_home()) {
-        get_template_part('front-page');
-    } elseif (is_front_page()) {
-        get_template_part('front-page');
-    } elseif (is_home()) {
-        get_template_part('archive');
-    } elseif (have_posts()) {
-        while (have_posts()) {
-            the_post();
-            get_template_part('content');
-        }
-    } else {
-        get_template_part('content', 'none');
-    }
-    ?>
-</main>
-<?php get_footer(); ?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div class="container" style="padding:80px 0; text-align:center;">
+    <h1>خطای 404</h1>
+    <p>صفحه‌ای که می‌خواهید پیدا نشد.</p>
+    <a href="<?php echo esc_url(home_url('/')); ?>" class="button">بازگشت به صفحه اصلی</a>
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>

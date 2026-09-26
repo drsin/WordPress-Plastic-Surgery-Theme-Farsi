@@ -1,3 +1,56 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
-?><!DOCTYPE html><html <?php language_attributes(); ?>><head><meta charset="<?php bloginfo('charset'); ?>"><meta name="viewport" content="width=device-width, initial-scale=1"><?php wp_head(); ?></head><body <?php body_class(); ?>><?php wp_body_open(); ?><div id="page" class="site"><header class="site-header"><div class="topbar"><div class="container topbar-inner"><div class="topbar-links"><span>📞 ۰۲۱-۱۲۳۴۵۶۷۸</span><span>📍 تهران، خیابان ولیعصر</span><span>🕒 شنبه تا پنج‌شنبه ۹ تا ۱۸</span></div><a class="topbar-button" href="#contact">درخواست مشاوره</a></div></div><div class="main-header"><div class="container nav-wrap"><div class="brand-wrap"><?php if (has_custom_logo()) the_custom_logo(); else : ?><a href="<?php echo esc_url(home_url('/')); ?>" class="brand-name"><span class="brand-mark">A</span><span><?php bloginfo('name'); ?></span></a><?php endif; ?></div><nav class="primary-nav" aria-label="منوی اصلی"><?php wp_nav_menu(array('theme_location'=>'primary','container'=>false,'menu_class'=>'nav-menu','fallback_cb'=>false)); ?></nav><button class="mobile-nav-toggle" aria-label="منوی موبایل" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
+if (!defined('ABSPATH')) {
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+    <header class="site-header">
+        <div class="topbar">
+            <div class="container topbar-inner">
+                <div class="topbar-links">
+                    <span>📞 021-12345678</span>
+                    <span>📍 تهران، خیابان ولیعصر</span>
+                    <span>🕒 شنبه تا پنج‌شنبه 9 تا 18</span>
+                </div>
+                <a href="#contact" class="topbar-button">درخواست مشاوره</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container nav-wrap">
+                <div class="brand-wrap">
+                    <?php if (has_custom_logo()) : ?>
+                        <?php the_custom_logo(); ?>
+                    <?php else : ?>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-mark">A</a>
+                    <?php endif; ?>
+                </div>
+
+                <nav class="primary-nav" aria-label="منوی اصلی">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container' => false,
+                        'menu_class' => 'nav-menu',
+                        'fallback_cb' => false,
+                    ));
+                    ?>
+                </nav>
+
+                <button class="mobile-nav-toggle" aria-label="منوی موبایل" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>

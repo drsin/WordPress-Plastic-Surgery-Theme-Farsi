@@ -1,26 +1,24 @@
 <?php
-/**
- * Archive template
- */
+if (!defined('ABSPATH')) {
+    exit;
+}
 get_header();
 ?>
 <main class="site-main">
     <section class="section">
         <div class="container">
-            <div class="section-heading">
-                <h1><?php the_archive_title(); ?></h1>
-                <p><?php the_archive_description(); ?></p>
-            </div>
-            <div class="archive-grid">
-                <?php
-                if (have_posts()) {
-                    while (have_posts()) {
-                        the_post();
-                        get_template_part('content');
-                    }
-                }
-                ?>
-            </div>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <article <?php post_class(); ?>>
+                    <header class="entry-header">
+                        <h1><?php the_title(); ?></h1>
+                    </header>
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                    </div>
+                </article>
+            <?php endwhile; else : ?>
+                <p>محتوایی برای نمایش وجود ندارد.</p>
+            <?php endif; ?>
         </div>
     </section>
 </main>

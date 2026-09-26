@@ -1,13 +1,13 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 ?>
-</div>
-
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-col">
             <h3>کلینیک زیبایی</h3>
-            <p>خدمات جراحی و زیبایی با هدف ارتقای اعتماد شما و نتیجه‌های طبیعی.</p>
+            <p>خدمات جراحی و زیبایی با تمرکز بر نتایج طبیعی، ایمن و شخصی‌سازی‌شده.</p>
             <div class="footer-social">
                 <a href="#" aria-label="اینستاگرام">📷</a>
                 <a href="#" aria-label="تلگرام">✈️</a>
@@ -48,12 +48,11 @@ if ( ! defined('ABSPATH') ) exit;
     <div class="footer-bottom">
         <div class="container footer-bottom-inner">
             <p>© 1404 کلینیک زیبایی. تمامی حقوق محفوظ است.</p>
-            <p>قالب فارسی سازگار با Elementor</p>
+            <p>قالب فارسی و راست‌چین</p>
         </div>
     </div>
 </footer>
 </div>
-
 <?php wp_footer(); ?>
 </body>
 </html>
