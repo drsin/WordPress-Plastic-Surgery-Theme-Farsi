@@ -3,52 +3,43 @@ if (!defined('ABSPATH')) {
     exit;
 }
 ?>
+</div>
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-col">
-            <h3>کلینیک زیبایی</h3>
-            <p>خدمات جراحی و زیبایی با تمرکز بر نتایج طبیعی، ایمن و شخصی‌سازی‌شده.</p>
-            <div class="footer-social">
-                <a href="#" aria-label="اینستاگرام">📷</a>
-                <a href="#" aria-label="تلگرام">✈️</a>
-                <a href="#" aria-label="لینکدین">🔗</a>
-            </div>
+            <h3>Clinic</h3>
+            <p>Professional beauty and surgical services.</p>
         </div>
-
         <div class="footer-col">
-            <h3>خدمات</h3>
+            <h3>Services</h3>
             <ul>
-                <li><a href="#services">بلفاروپلاستی</a></li>
-                <li><a href="#services">لیفت صورت</a></li>
-                <li><a href="#services">جراحی بینی</a></li>
-                <li><a href="#services">فیلر و بوتاکس</a></li>
+                <li><a href="#">Blepharoplasty</a></li>
+                <li><a href="#">Facelift</a></li>
+                <li><a href="#">Rhinoplasty</a></li>
+                <li><a href="#">Filler</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h3>پیوندها</h3>
+            <h3>Links</h3>
             <ul>
-                <li><a href="#">درباره ما</a></li>
-                <li><a href="#">تیم پزشکی</a></li>
-                <li><a href="#">گالری نتایج</a></li>
-                <li><a href="#">مقالات</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h3>تماس</h3>
+            <h3>Contact</h3>
             <ul>
-                <li>تهران، خیابان ولیعصر</li>
+                <li>Tehran, Valisar</li>
                 <li>021-12345678</li>
-                <li>info@audubonclinic.ir</li>
+                <li>info@clinic.ir</li>
             </ul>
         </div>
     </div>
-
     <div class="footer-bottom">
-        <div class="container footer-bottom-inner">
-            <p>© 1404 کلینیک زیبایی. تمامی حقوق محفوظ است.</p>
-            <p>قالب فارسی و راست‌چین</p>
+        <div class="container">
+            <p>Copyright 2024. All rights reserved. Theme by Saeid Abdi</p>
         </div>
     </div>
 </footer>

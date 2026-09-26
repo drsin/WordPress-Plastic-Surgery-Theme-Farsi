@@ -1,76 +1,76 @@
 <?php
+if (!defined('ABSPATH')) {
+    exit;
+}
 get_header();
-$theme_uri = get_template_directory_uri();
+$uri = get_template_directory_uri();
 ?>
 <main class="site-main">
-    <section class="hero hero-home">
+    <section class="hero-home">
         <div class="container hero-grid">
             <div class="hero-copy">
-                <span class="eyebrow">جراحی زیبایی پیشرفته</span>
-                <h1>زیبایی طبیعی، اعتماد بیشتر، نتیجه‌ای پایدار.</h1>
-                <p>کلینیک ما با تیم متخصص و فناوری روز، خدمات جراحی و غیرجراحی زیبایی را با دقت بالا و نتیجه‌ای طبیعی ارائه می‌دهد.</p>
+                <span class="eyebrow">Beauty Surgery</span>
+                <h1>Natural Beauty, More Confidence</h1>
+                <p>Professional clinic with experienced team and latest technology for your beauty needs.</p>
                 <div class="hero-actions">
-                    <a href="#contact" class="button">رزرو مشاوره</a>
-                    <a href="#services" class="button button-secondary">مشاهده خدمات</a>
+                    <a href="#contact" class="button">Request Consultation</a>
+                    <a href="#services" class="button button-secondary">View Services</a>
                 </div>
                 <ul class="hero-points">
-                    <li>بیش از 15 سال تجربه</li>
-                    <li>تیم جراحان متخصص</li>
-                    <li>نتایج طبیعی و ایمن</li>
+                    <li>15+ Years Experience</li>
+                    <li>Expert Surgeons</li>
+                    <li>Natural Results</li>
                 </ul>
             </div>
-
             <div class="hero-visual">
                 <div class="hero-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/hero-clinic.svg'); ?>" alt="کلینیک زیبایی">
+                    <img src="<?php echo esc_url($uri . '/assets/images/hero-clinic.svg'); ?>" alt="Clinic">
                 </div>
-                <div class="hero-badge badge-1">4.9/5 امتیاز</div>
-                <div class="hero-badge badge-2">+12,000 بیمار</div>
+                <div class="hero-badge badge-1">4.9/5 Rating</div>
+                <div class="hero-badge badge-2">+12,000 Patients</div>
             </div>
         </div>
     </section>
 
     <section class="section stats-section">
         <div class="container stats-grid">
-            <div class="stat-item"><strong>12k+</strong><span>مشتری راضی</span></div>
-            <div class="stat-item"><strong>15+</strong><span>سال تجربه</span></div>
-            <div class="stat-item"><strong>20+</strong><span>روش نوین درمانی</span></div>
-            <div class="stat-item"><strong>98%</strong><span>رضایت بیماران</span></div>
+            <div class="stat-item"><strong>12k+</strong><span>Happy Patients</span></div>
+            <div class="stat-item"><strong>15+</strong><span>Years Experience</span></div>
+            <div class="stat-item"><strong>20+</strong><span>Treatment Methods</span></div>
+            <div class="stat-item"><strong>98%</strong><span>Patient Satisfaction</span></div>
         </div>
     </section>
 
     <section id="services" class="section">
         <div class="container">
             <div class="section-heading">
-                <span class="eyebrow">خدمات ما</span>
-                <h2>مناسب‌ترین درمان‌ها برای زیبایی طبیعی</h2>
-                <p>هر درمان بر اساس شرایط فردی و اهداف بیمار شخصی‌سازی می‌شود.</p>
+                <span class="eyebrow">Our Services</span>
+                <h2>Professional Beauty Treatments</h2>
             </div>
-
             <div class="services-grid">
                 <article class="service-card">
                     <div class="icon-box">✦</div>
-                    <h3>بلفاروپلاستی</h3>
-                    <p>رفع پف زیر چشم و جوان‌سازی اطراف چشم.</p>
-                    <a href="#contact">اطلاعات بیشتر</a>
+                    <h3>Blepharoplasty</h3>
+                    <p>Under-eye bags removal and eye rejuvenation.</p>
+                    <a href="#contact">Learn More</a>
                 </article>
                 <article class="service-card">
                     <div class="icon-box">✦</div>
-                    <h3>لیفت صورت</h3>
-                    <p>سفت‌کردن پوست و جوان‌سازی صورت.</p>
-                    <a href="#contact">اطلاعات بیشتر</a>
+                    <h3>Facelift</h3>
+                    <p>Skin tightening and facial rejuvenation.</p>
+                    <a href="#contact">Learn More</a>
                 </article>
                 <article class="service-card">
                     <div class="icon-box">✦</div>
-                    <h3>جراحی بینی</h3>
-                    <p>اصلاح فرم و تناسب بینی با چهره.</p>
-                    <a href="#contact">اطلاعات بیشتر</a>
+                    <h3>Rhinoplasty</h3>
+                    <p>Nose reshaping with natural results.</p>
+                    <a href="#contact">Learn More</a>
                 </article>
                 <article class="service-card">
                     <div class="icon-box">✦</div>
-                    <h3>فیلر و بوتاکس</h3>
-                    <p>کاهش خطوط و بهبود فرم صورت.</p>
-                    <a href="#contact">اطلاعات بیشتر</a>
+                    <h3>Filler & Botox</h3>
+                    <p>Non-surgical facial rejuvenation.</p>
+                    <a href="#contact">Learn More</a>
                 </article>
             </div>
         </div>
@@ -79,17 +79,17 @@ $theme_uri = get_template_directory_uri();
     <section class="section">
         <div class="container about-grid">
             <div class="about-image-wrap">
-                <img src="<?php echo esc_url($theme_uri . '/assets/images/consultation.svg'); ?>" alt="مشاوره زیبایی">
+                <img src="<?php echo esc_url($uri . '/assets/images/consultation.svg'); ?>" alt="Consultation">
             </div>
             <div class="about-copy">
-                <span class="eyebrow">درباره ما</span>
-                <h2>در کنار شما، با تجربه و دقت برای نتیجه‌ای طبیعی.</h2>
-                <p>ما با ترکیب تخصص پزشکی، طراحی درمان شخصی و استفاده از فناوری‌های روز، تجربه‌ای امن و کاملاً شخصی را برای هر بیمار خلق می‌کنیم.</p>
+                <span class="eyebrow">About Us</span>
+                <h2>Your Beauty, Our Priority</h2>
+                <p>With professional expertise and latest technology, we provide personalized beauty solutions for each patient.</p>
                 <ul class="check-list">
-                    <li>مشاوره دقیق و شخصی‌سازی‌شده</li>
-                    <li>تکنولوژی‌های مدرن و به‌روز</li>
-                    <li>پیگیری دقیق پس از عمل</li>
-                    <li>تیم پزشکی مجرب و حرفه‌ای</li>
+                    <li>Expert Consultation</li>
+                    <li>Modern Technology</li>
+                    <li>Professional Follow-up</li>
+                    <li>Experienced Team</li>
                 </ul>
             </div>
         </div>
@@ -98,13 +98,13 @@ $theme_uri = get_template_directory_uri();
     <section class="section">
         <div class="container">
             <div class="section-heading">
-                <span class="eyebrow">گالری نتایج</span>
-                <h2>نمونه‌هایی از نتایج طبیعی ما</h2>
+                <span class="eyebrow">Results Gallery</span>
+                <h2>Before & After Examples</h2>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="<?php echo esc_url($theme_uri . '/assets/images/before-after-face.svg'); ?>" alt="قبل و بعد صورت"></div>
-                <div class="gallery-item"><img src="<?php echo esc_url($theme_uri . '/assets/images/before-after-profile.svg'); ?>" alt="قبل و بعد صورت در نمای جانبی"></div>
-                <div class="gallery-item"><img src="<?php echo esc_url($theme_uri . '/assets/images/patient-care.svg'); ?>" alt="مراقبت از بیمار"></div>
+                <div class="gallery-item"><img src="<?php echo esc_url($uri . '/assets/images/before-after-face.svg'); ?>" alt="Results"></div>
+                <div class="gallery-item"><img src="<?php echo esc_url($uri . '/assets/images/before-after-profile.svg'); ?>" alt="Results"></div>
+                <div class="gallery-item"><img src="<?php echo esc_url($uri . '/assets/images/patient-care.svg'); ?>" alt="Results"></div>
             </div>
         </div>
     </section>
@@ -112,36 +112,36 @@ $theme_uri = get_template_directory_uri();
     <section class="section">
         <div class="container">
             <div class="section-heading">
-                <span class="eyebrow">تیم پزشکی</span>
-                <h2>متخصصان مجرب و ماهر</h2>
+                <span class="eyebrow">Our Team</span>
+                <h2>Expert Specialists</h2>
             </div>
             <div class="team-grid">
                 <article class="team-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/doctor-sara.svg'); ?>" alt="دکتر سارا احمدی">
+                    <img src="<?php echo esc_url($uri . '/assets/images/doctor-sara.svg'); ?>" alt="Dr Sara">
                     <div class="team-card-body">
-                        <h3>دکتر سارا احمدی</h3>
-                        <p>جراح پلاستیک</p>
+                        <h3>Dr Sara Ahmadi</h3>
+                        <p>Plastic Surgeon</p>
                     </div>
                 </article>
                 <article class="team-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/doctor-amir.svg'); ?>" alt="دکتر امیر هاشمی">
+                    <img src="<?php echo esc_url($uri . '/assets/images/doctor-amir.svg'); ?>" alt="Dr Amir">
                     <div class="team-card-body">
-                        <h3>دکتر امیر هاشمی</h3>
-                        <p>متخصص زیبایی</p>
+                        <h3>Dr Amir Hashemi</h3>
+                        <p>Beauty Specialist</p>
                     </div>
                 </article>
                 <article class="team-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/doctor-sara.svg'); ?>" alt="دکتر نرگس رضایی">
+                    <img src="<?php echo esc_url($uri . '/assets/images/doctor-sara.svg'); ?>" alt="Dr Narges">
                     <div class="team-card-body">
-                        <h3>دکتر نرگس رضایی</h3>
-                        <p>مشاوره و پوست</p>
+                        <h3>Dr Narges Rezaei</h3>
+                        <p>Skin Specialist</p>
                     </div>
                 </article>
                 <article class="team-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/doctor-amir.svg'); ?>" alt="دکتر محمدی">
+                    <img src="<?php echo esc_url($uri . '/assets/images/doctor-amir.svg'); ?>" alt="Dr Mohammad">
                     <div class="team-card-body">
-                        <h3>دکتر محمدی</h3>
-                        <p>جراحی بینی</p>
+                        <h3>Dr Mohammad</h3>
+                        <p>Rhinoplasty Expert</p>
                     </div>
                 </article>
             </div>
@@ -151,21 +151,21 @@ $theme_uri = get_template_directory_uri();
     <section class="section">
         <div class="container">
             <div class="section-heading">
-                <span class="eyebrow">نظرات بیماران</span>
-                <h2>تجربه‌ای واقعی از خدمات ما</h2>
+                <span class="eyebrow">Patient Reviews</span>
+                <h2>Real Experiences</h2>
             </div>
             <div class="testimonial-grid">
                 <blockquote class="testimonial-item">
-                    «از مشاوره تا نتیجه نهایی، همه چیز دقیق و حرفه‌ای بود و نتیجه کاملاً طبیعی بود.»
-                    <footer>— مریم ر.</footer>
+                    Everything was professional and result was natural and exactly as expected.
+                    <footer>— Maryam R.</footer>
                 </blockquote>
                 <blockquote class="testimonial-item">
-                    «تیم متخصص با صبر و حوصله همراهی کردند و حس اعتماد زیادی برایم ایجاد شد.»
-                    <footer>— ندا خ.</footer>
+                    The team was patient and professional throughout the process and gave me confidence.
+                    <footer>— Neda Kh.</footer>
                 </blockquote>
                 <blockquote class="testimonial-item">
-                    «نتیجه‌ای طبیعی و شاداب‌تر از چهره‌ام گرفتم و کاملاً راضی هستم.»
-                    <footer>— الهه م.</footer>
+                    I have a more youthful and natural appearance and I am very satisfied with results.
+                    <footer>— Elaheh M.</footer>
                 </blockquote>
             </div>
         </div>
@@ -174,21 +174,21 @@ $theme_uri = get_template_directory_uri();
     <section class="section faq-section">
         <div class="container">
             <div class="section-heading">
-                <span class="eyebrow">پرسش‌های متداول</span>
-                <h2>قبل از مشاوره چه بدانیم؟</h2>
+                <span class="eyebrow">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
             </div>
             <div class="faq-list">
                 <details>
-                    <summary>جلسه مشاوره چگونه انجام می‌شود؟</summary>
-                    <p>پس از بررسی وضعیت شما، گزینه‌های درمان، زمان بهبودی و هزینه به‌صورت شفاف توضیح داده می‌شود.</p>
+                    <summary>How is consultation conducted?</summary>
+                    <p>After examining your condition, we discuss treatment options, recovery time and costs transparently.</p>
                 </details>
                 <details>
-                    <summary>آیا نتیجه جراحی طبیعی خواهد بود؟</summary>
-                    <p>بله، هدف اصلی ما حفظ تناسب چهره و دستیابی به نتیجه‌ای طبیعی و متناسب با ویژگی‌های صورت شماست.</p>
+                    <summary>Will surgery results be natural?</summary>
+                    <p>Yes, our goal is to maintain facial harmony and achieve natural results suitable for your features.</p>
                 </details>
                 <details>
-                    <summary>چطور نوبت رزرو کنم؟</summary>
-                    <p>می‌توانید از فرم زير صفحه استفاده کنید یا با شماره تماس ما هماهنگ کنید.</p>
+                    <summary>How do I book an appointment?</summary>
+                    <p>You can use the contact form below or call us directly for appointment scheduling.</p>
                 </details>
             </div>
         </div>
@@ -197,10 +197,10 @@ $theme_uri = get_template_directory_uri();
     <section id="contact" class="section cta-section">
         <div class="container cta-box">
             <div>
-                <span class="eyebrow">رزرو مشاوره</span>
-                <h2>برای شروع مسیر زیبایی خود با ما تماس بگیرید.</h2>
+                <span class="eyebrow">Book Consultation</span>
+                <h2>Start Your Beauty Journey Today</h2>
             </div>
-            <a href="mailto:info@audubonclinic.ir" class="button">درخواست مشاوره</a>
+            <a href="mailto:info@audubonclinic.ir" class="button">Request Consultation</a>
         </div>
     </section>
 </main>

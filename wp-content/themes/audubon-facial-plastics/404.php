@@ -8,9 +8,10 @@ get_header();
     <section class="section">
         <div class="container">
             <div class="section-heading">
-                <h1>صفحه مورد نظر پیدا نشد</h1>
+                <h1>Page Not Found</h1>
+                <p>The page you are looking for does not exist.</p>
             </div>
-            <p style="text-align:center;">متأسفانه صفحه‌ای که به دنبال آن هستید وجود ندارد.</p>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="button">Back to Home</a>
         </div>
     </section>
 </main>

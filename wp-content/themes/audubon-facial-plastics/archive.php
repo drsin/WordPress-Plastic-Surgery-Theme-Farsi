@@ -8,7 +8,7 @@ get_header();
     <section class="section">
         <div class="container">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article <?php post_class(); ?>>
+                <article <?php post_class('single-post'); ?>>
                     <header class="entry-header">
                         <h1><?php the_title(); ?></h1>
                     </header>
@@ -17,7 +17,7 @@ get_header();
                     </div>
                 </article>
             <?php endwhile; else : ?>
-                <p>محتوایی برای نمایش وجود ندارد.</p>
+                <p>No content found.</p>
             <?php endif; ?>
         </div>
     </section>
