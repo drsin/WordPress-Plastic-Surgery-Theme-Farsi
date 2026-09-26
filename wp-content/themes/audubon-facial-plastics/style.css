@@ -1,0 +1,66 @@
+/*
+Theme Name: Audubon Facial Plastics
+Theme URI: https://github.com/drsin/WordPress-Plastic-Surgery-Theme-Farsi
+Author: GitHub Copilot
+Author URI: https://github.com/drsin
+Description: قالب وردپرسی فارسی و حرفه‌ای برای کلینیک جراحی زیبایی، با طراحی مدرن، RTL و سازگاری با Elementor.
+Version: 1.0.0
+Text Domain: audubon-facial-plastics
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+*/
+
+:root {
+  --audubon-ivory: #f5efe9;
+  --audubon-beige: #d9cbb6;
+  --audubon-gold: #b88d4a;
+  --audubon-sand: #efe4d2;
+  --audubon-text: #1d1d1d;
+  --audubon-muted: #6a6a6a;
+  --audubon-white: #ffffff;
+  --audubon-dark: #1c1c1d;
+  --audubon-headline: #1a1a1a;
+  --audubon-shadow: 0 20px 45px rgba(28, 28, 29, 0.08);
+}
+
+html,
+body {
+  direction: rtl;
+  font-family: 'Vazirmatn', sans-serif;
+  background: var(--audubon-ivory);
+  color: var(--audubon-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 90px 0;
+}

@@ -1,0 +1,92 @@
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+$theme_dir = get_template_directory();
+$theme_uri = get_template_directory_uri();
+?>
+
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div class="site-shell">
+    <header class="site-header">
+        <div class="topbar">
+            <div class="container topbar-inner">
+                <div class="topbar-contact">
+                    <span>📞 972-123-4567</span>
+                    <span>📍 123 Wellness Avenue</span>
+                </div>
+                <a href="#contact" class="topbar-link">درخواست مشاوره</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container nav-container">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-mark">
+                    <span>A</span>
+                </a>
+
+                <nav class="main-nav" aria-label="منوی اصلی">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container' => false,
+                        'menu_class' => 'main-menu',
+                        'fallback_cb' => false,
+                    ));
+                    ?>
+                </nav>
+
+                <button class="menu-toggle" aria-label="باز کردن منو">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <?php get_template_part('front-page'); ?>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>کلینیک زیبایی</h3>
+                <p>خدمات جراحی و زیبایی با هدف ارتقای اعتماد شما و نتیجه‌های طبیعی.</p>
+            </div>
+            <div>
+                <h3>پیوندها</h3>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">خدمات</a></li>
+                    <li><a href="#">تیم</a></li>
+                    <li><a href="#">تماس</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>تماس</h3>
+                <ul>
+                    <li>123 Wellness Avenue</li>
+                    <li>+1 (212) 555-0199</li>
+                    <li>info@audubonclinic.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2025 کلینیک زیبایی. همه حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>

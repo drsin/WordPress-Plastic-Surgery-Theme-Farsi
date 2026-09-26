@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+    <header class="site-header">
+        <div class="topbar">
+            <div class="container topbar-inner">
+                <div class="topbar-links">
+                    <span>📞 972-123-4567</span>
+                    <span>📍 123 Wellness Avenue, New York</span>
+                    <span>🕒 شنبه تا جمعه 9:00 - 18:00</span>
+                </div>
+                <a class="topbar-button" href="#contact">درخواست مشاوره</a>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container nav-wrap">
+                <div class="brand-wrap">
+                    <?php if (has_custom_logo()) : ?>
+                        <?php the_custom_logo(); ?>
+                    <?php else : ?>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-name">
+                            <span class="brand-mark">A</span>
+                            <span><?php bloginfo('name'); ?></span>
+                        </a>
+                    <?php endif; ?>
+                </div>
+
+                <nav class="primary-nav" aria-label="منوی اصلی">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container'      => false,
+                        'menu_class'     => 'nav-menu',
+                        'fallback_cb'    => false,
+                    ));
+                    ?>
+                </nav>
+
+                <button class="mobile-nav-toggle" aria-label="منوی موبایل" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
